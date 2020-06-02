@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_snc_whatsapp_twi_whatsapp_msg_transaction</description>
+        <name>x_snc_whatsapp_twi_whatsapp_msg_transaction</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-02 19:46:59</sys_created_on>
+        <sys_id>9bbcaf1f994110107f4449fb75a7f6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_whatsapp_twi_whatsapp_msg_transaction</sys_name>
+        <sys_package display_value="Whatsapp-Twillio " source="x_snc_whatsapp_twi">a5ba6bdb994110107f4449fb75a7f671</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Whatsapp-Twillio ">a5ba6bdb994110107f4449fb75a7f671</sys_scope>
+        <sys_update_name>sys_security_acl_9bbcaf1f994110107f4449fb75a7f6ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-02 19:46:59</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

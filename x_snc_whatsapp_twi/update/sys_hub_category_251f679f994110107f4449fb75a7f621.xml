@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Whatsapp</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-02 19:57:21</sys_created_on>
+        <sys_id>251f679f994110107f4449fb75a7f621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Whatsapp</sys_name>
+        <sys_package display_value="Whatsapp-Twillio " source="x_snc_whatsapp_twi">a5ba6bdb994110107f4449fb75a7f671</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Whatsapp-Twillio ">a5ba6bdb994110107f4449fb75a7f671</sys_scope>
+        <sys_update_name>sys_hub_category_251f679f994110107f4449fb75a7f621</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-02 19:57:21</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=251f679f994110107f4449fb75a7f621"/>
+</record_update>
