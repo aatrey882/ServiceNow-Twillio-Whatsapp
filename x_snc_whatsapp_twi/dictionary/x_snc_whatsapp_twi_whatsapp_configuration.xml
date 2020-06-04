@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="WhatsApp Configuration" max_length="40" name="x_snc_whatsapp_twi_whatsapp_configuration" type="collection">
+    <element label="WhatsApp Configuration" max_length="40" name="x_snc_whatsapp_twi_whatsapp_configuration" sizeclass="2" type="collection">
+        <element attributes="encode_utf8=false" label="API Details" max_length="32" name="api_details" reference="http_connection" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="From" max_length="100" name="from" type="phone_number_e164"/>
+        <element label="Inbound" max_length="40" name="inbound" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Outbound Details" max_length="32" name="outbound_details" reference="sys_alias" type="reference"/>
+        <index name="index">
+            <element name="api_details"/>
+        </index>
+        <index name="index2">
+            <element name="outbound_details"/>
+        </index>
     </element>
 </database>

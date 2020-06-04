@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_whatsapp_twi.WhatsAppTwilio</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WhatsAppTwilio</name>
+        <script><![CDATA[var WhatsAppTwilio = Class.create();
+WhatsAppTwilio.prototype = {
+    initialize: function() {},
+    errorHandling: function(inputs, outputs) {
+
+        if (inputs.status_code != 201) {
+            if (inputs.status_code == 401) {
+                outputs.error_message = "Invalid credentials";
+            } else {
+                outputs.error_message = JSON.parse(inputs.response_body).message;
+            }
+            outputs.status = "Error";
+        } else {
+            outputs.status = "Success";
+        }
+
+    },
+    type: 'WhatsAppTwilio'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 11:32:51</sys_created_on>
+        <sys_id>3cf447af99c510107f4449fb75a7f68e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>WhatsAppTwilio</sys_name>
+        <sys_package display_value="Whatsapp-Twillio " source="x_snc_whatsapp_twi">a5ba6bdb994110107f4449fb75a7f671</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Whatsapp-Twillio ">a5ba6bdb994110107f4449fb75a7f671</sys_scope>
+        <sys_update_name>sys_script_include_3cf447af99c510107f4449fb75a7f68e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 11:39:01</sys_updated_on>
+    </sys_script_include>
+</record_update>
